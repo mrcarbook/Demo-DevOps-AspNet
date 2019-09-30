@@ -13,10 +13,12 @@ variables:
   buildConfiguration: 'Release'
 
 steps:
-- task: DotNetCoreInstaller@0
+- task: DotNetCoreInstaller@1
   inputs:
     packageType: 'sdk'
-    version: '2.2'
+    version: '2.2.0'
+ 
+
 - script: dotnet restore
 
 - task: DotNetCoreCLI@2
