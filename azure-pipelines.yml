@@ -16,9 +16,8 @@ steps:
 - task: DotNetCoreInstaller@1
   inputs:
     packageType: 'sdk'
-    version: '2.2.0'
+    version: '2.2.x'
  
-
 - script: dotnet restore
 
 - task: DotNetCoreCLI@2
